@@ -68,7 +68,7 @@ function performAnimationBetweenNodes(previousNode: HTMLElement, node: HTMLEleme
 
 	requestAnimationFrame(() => {
 		requestAnimationFrame(() => {
-			node.style.transition = 'transform 250ms, z-index 250ms';
+			node.style.transition = 'transform 250ms';
 			node.style.transform = 'translate(0) scale(1)';
 			node.addEventListener(
 				'transitionend',
