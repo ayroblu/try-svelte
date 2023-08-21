@@ -61,7 +61,7 @@ function performAnimationBetweenNodes(previousNode: HTMLElement, node: HTMLEleme
 	const offsetY = (previousRect.height - currentRect.height * scaleValue) / 2;
 	const x = previousRect.left - currentRect.left + offsetX;
 	const y = previousRect.top - currentRect.top + offsetY;
-	node.style.transform = `translate(${x}px, ${y}px) scale(${scaleValue})`;
+	node.style.transform = `translate(${x}px, ${y}px) translateZ(0) scale(${scaleValue})`;
 	node.style.transformOrigin = `top left`;
 	node.style.transition = '';
 	node.style.zIndex = '1';
